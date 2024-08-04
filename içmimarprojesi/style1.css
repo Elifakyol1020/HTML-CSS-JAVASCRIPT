@@ -1,0 +1,195 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+  }
+  
+  header {
+    margin: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  h1 {
+    /* display: inline-block; */
+    font-weight: 300;
+  }
+  .navbar .hamburger {
+    display: none;
+  }
+  
+  .bar1,
+  .bar2,
+  .bar3 {
+    width: 36px;
+    height: 4px;
+    background-color: black;
+    border-radius: 10px;
+    margin: 3px;
+  }
+  
+  .links {
+    /* display: inline-block; */
+  }
+  
+  .links ul {
+    /* display: inline-block; */
+    display: flex;
+    list-style: none;
+  }
+  .links a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0px 8px;
+  }
+  
+  a.active {
+    border-bottom: 1px solid black;
+  }
+  
+  .gallery {
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .card {
+    /* display: inline-block; */
+    width: 49%;
+    padding: 16px;
+    box-sizing: border-box;
+  }
+  
+  .card img {
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .card img:hover {
+    opacity: 0.9;
+  }
+  .card h2 {
+    margin: 8px 0px 16px 0px;
+    font-weight: 300;
+  }
+  
+  .why {
+    width: 50%;
+    margin: 100px 200px;
+  }
+  
+  .banner {
+    font-weight: 300;
+    font-style: italic;
+    font-size: 25px;
+  }
+  
+  .message {
+    color: red;
+    font-size: 50px;
+    font-style: italic;
+    margin-top: 0px;
+    border-bottom: 1px solid black;
+    padding-bottom: 8px;
+  }
+  
+  .contact p {
+    margin: 0;
+    font-weight: 600;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .navbar .hamburger {
+      display: block;
+      z-index: 1;
+    }
+    .navbar .links {
+      display: none;
+    }
+    .navbar h1 {
+      font-size: 20px;
+    }
+    .card {
+      width: 100%;
+      padding: 0;
+    }
+  
+    .why {
+      width: 80%;
+      margin: 0;
+      padding: 20px;
+    }
+  
+    .message {
+      font-size: 35px;
+    }
+  }
+  
+  .animationBar1 {
+    animation: 1s fadeBar1;
+    animation-fill-mode: forwards;
+  }
+  
+  .animationBar2 {
+    animation: 1s fadeBar2;
+    animation-fill-mode: forwards;
+  }
+  
+  .animationBar3 {
+    animation: 1s fadeBar3;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes fadeBar1 {
+    from {
+      transform: rotate(0);
+    }
+    to {
+      transform: rotate(45deg) translate(4px, 6px);
+    }
+  }
+  
+  @keyframes fadeBar2 {
+    from {
+      transform: scaleX(1);
+    }
+    to {
+      transform: scaleX(0);
+    }
+  }
+  
+  @keyframes fadeBar3 {
+    from {
+      transform: rotate(0);
+    }
+    to {
+      transform: rotate(-45deg) translate(4px, -6px);
+    }
+  }
+  
+  .mobileNav {
+    position: fixed;
+    width: 80px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    right: -120px;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 16px;
+    transition: transform 1s;
+  }
+  
+  .mobileNav a {
+    color: black;
+    text-decoration: none;
+    margin: 16px 0px;
+  }
+  
+  .openSidebar {
+    transform: translateX(-120px);
+  }
+  
