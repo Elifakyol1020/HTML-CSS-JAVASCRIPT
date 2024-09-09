@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Korona Çalışma Anketi</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+    <section id="header">
+        <div class="bg-white text-center py-5">
+            <div class="container">
+                <h2 class="text-danger display-3 my-4">Evden Çalışma Anketi</h2>
+            </div>
+        </div>
+    </section>
+    <div class="result d-none py-4 bg-white text-center">
+        <div class="container lead">
+            <p><span class="text-danger display-4 p-3">0%</span> ofise dönmek istiyorsun.</p>
+        </div>
+    </div>
+    <section  id="questions">
+        <div class="bg-secondary">
+            <div class="container">
+                <form class="question-form text-white">
+                    <div class="py-3">
+                        <p>1.Ofiste daha verimli çalışıyorum.</p>
+                        <div class="form-check">
+                            <input class="form-check-input" value="E" type="radio" name="q1"  checked>
+                            <label class="form-check-label">
+                             Evet
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" value="H" type="radio" name="q1">
+                            <label class="form-check-label">
+                             Hayır
+                            </label>
+                          </div>   
+                    </div>
+                    <div class="py-3">
+                        <p>2.Ofiste tam zamanlı çalışmak istiyorum.</p>
+                        <div class="form-check">
+                            <input class="form-check-input" value="E" type="radio" name="q2" checked>
+                            <label class="form-check-label">
+                             Evet
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" value="H" type="radio" name="q2">
+                            <label class="form-check-label">
+                             Hayır
+                            </label>
+                          </div>   
+                    </div>
+                    <div class="py-3">
+                        <p>3.Evdeyken teknik sorunlar daha zor çözülüyor.</p>
+                        <div class="form-check">
+                            <input class="form-check-input" value="E" type="radio" name="q3" checked>
+                            <label class="form-check-label">
+                             Evet
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" value="H" type="radio" name="q3">
+                            <label class="form-check-label">
+                             Hayır
+                            </label>
+                          </div>   
+                    </div>
+                    <div class="py-3">
+                        <p>4.Evdeyken Jiradaki haftalık taslakları yetiştirmekte zorlanıyorum.</p>
+                        <div class="form-check">
+                            <input class="form-check-input" value="E" type="radio" name="q4" checked>
+                            <label class="form-check-label">
+                             Evet
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" value="H" type="radio" name="q4">
+                            <label class="form-check-label">
+                             Hayır
+                            </label>
+                          </div>   
+                    </div>
+                    <div class="text-center py-3">
+                        <input type="submit" class="btn btn-light">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="anket.js"></script>
+</body>
+</html>
